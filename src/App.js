@@ -10,8 +10,6 @@ import About from './routes/about'
 import Home from './routes/home'
 import Contact from './routes/contact'
 
-import './App.css';
-
 class App extends Component {
   render() {
     return (
