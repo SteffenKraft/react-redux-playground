@@ -3,6 +3,7 @@ import {
   BrowserRouter as Router,
   Route
 } from 'react-router-dom'
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 import Layout from './layout'
 import About from './routes/about'
@@ -14,13 +15,15 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <Router>
-        <Layout>
-          <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/contact" component={Contact} />
-        </Layout>
-      </Router>
+      <MuiThemeProvider>
+        <Router>
+          <Layout>
+            <Route exact path="/" component={Home} />
+            <Route path="/about" component={About} />
+            <Route path="/contact" component={Contact} />
+          </Layout>
+        </Router>
+      </MuiThemeProvider>
     )
   }
 }
