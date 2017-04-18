@@ -111,7 +111,8 @@ module.exports = {
           /\.(js|jsx)$/,
           /\.css$/,
           /\.json$/,
-          /\.svg$/
+          /\.svg$/,
+          /\.scss$/
         ],
         loader: 'url',
         query: {
@@ -139,10 +140,11 @@ module.exports = {
       // use the "style" loader inside the async code so CSS from them won't be
       // in the main CSS file.
       {
-        test: /\.css$/,
+        test: /\.scss$/,
         loader: ExtractTextPlugin.extract(
           'style',
-          'css?importLoaders=1!postcss',
+          'css?sourceMap&minimize&modules&importLoaders=1&localIdentName=[name]___[local]___[hash:base64:5]',
+          'sass?sourceMap',
           extractTextPluginOptions
         )
         // Note: this won't work without `new ExtractTextPlugin()` in `plugins`.

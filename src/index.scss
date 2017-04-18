@@ -1,20 +1,4 @@
-@font-face {
-  font-family: Roboto; /* regular font */
-  src: url('./font/roboto/Roboto-Regular.woff') format("woff");
-  font-weight: normal; font-style: normal; 
-}
-
-@font-face {
-  font-family: Roboto; /* regular font */
-  src: url('./font/roboto/Roboto-Bold.woff') format("woff");
-  font-weight: bold; font-style: normal; 
-}
-
-@font-face {
-  font-family: Roboto; /* regular font */
-  src: url('./font/roboto/Roboto-Thin.woff') format("woff");
-  font-weight: 100; font-style: normal; 
-}
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 body {
   font-family: Roboto, Arial, Helvetica, sans-serif;

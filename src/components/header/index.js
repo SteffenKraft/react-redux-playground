@@ -1,14 +1,15 @@
 import React from 'react'
+import CSSModules from 'react-css-modules'
 import { NavLink } from 'react-router-dom'
 
-import './header.scss'
+import styles from './header.scss'
 
 const Header = () => (
-    <div>
-        <NavLink exact to="/" activeClassName="selected">Home</NavLink>
-        <NavLink to="/about" activeClassName="selected">About</NavLink>
-        <NavLink to="/contact" activeClassName="selected">Contact</NavLink>
+    <div styleName="wrapper">
+        <NavLink exact to="/"   >Home</NavLink>
+        <NavLink to="/about">About</NavLink>
+        <NavLink to="/contact">Contact</NavLink>
     </div>
 )
 
-export default Header
+export default CSSModules(Header, styles);

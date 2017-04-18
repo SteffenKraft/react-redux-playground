@@ -124,8 +124,11 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        include: paths.appSrc,
-        loaders: ["style", "css", "sass"]
+          loaders: [
+              'style',
+              'css?sourceMap&-minimize&modules&importLoaders=1&localIdentName=[name]___[local]___[hash:base64:5]',
+              'sass?sourceMap'
+          ]
       },
       // Process JS with Babel.
       {
