@@ -39,13 +39,13 @@ class Contact extends React.Component {
                     <title>Contact - My Reactplay Ground</title>
                     <meta name="description" content="My Reactplay Ground - Contactpage" />
                 </Helmet>
-                <h1>Contact</h1>
                 <form onSubmit={this.handleSubmit}>
                     <TextField
                         onChange={this.handleInputChange}
                         hintText="Please enter your Firstname"
                         floatingLabelText="Firstname"
                         fullWidth={true}
+                        underlineFocusStyle={{ border: 'none' }}
                         name="firstname"
                     />
                     <TextField
@@ -53,6 +53,7 @@ class Contact extends React.Component {
                         hintText="Please enter your Name"
                         floatingLabelText="Name"
                         fullWidth={true}
+                        underlineFocusStyle={{ border: 'none' }}
                         name="name"
                         // errorText="Please put in your Name"
                     />
@@ -61,6 +62,7 @@ class Contact extends React.Component {
                         hintText="Please enter your Street"
                         floatingLabelText="Street"
                         fullWidth={true}
+                        underlineFocusStyle={{ border: 'none' }}
                         name="street"
                     />
                     <TextField
@@ -68,24 +70,29 @@ class Contact extends React.Component {
                         hintText="Please enter your Email"
                         floatingLabelText="Email"
                         fullWidth={true}
+                        underlineFocusStyle={{ border: 'none' }}
                         name="email"
                     />
                     <Checkbox
                         onCheck={this.handleInputChange}
                         label="Newsletter"
                         name="newsletter"
+                        style={{ marginTop: '10px' }}
+                        iconStyle={{ marginRight: '10px' }}
                     />
                     <Toggle
                         onToggle={this.handleInputChange}
-                        label="Label on the right"
+                        label="different address"
                         name="billing"
                         labelStyle={{textAlign: 'right'}}
+                        style={{ marginTop: '10px' }}
                     />
                     <RaisedButton
                         label="Primary"
                         primary={true}
                         fullWidth={true}
                         type="submit"
+                        style={{ marginTop: '20px' }}
                     />
                 </form>
             </div>

@@ -13,7 +13,8 @@ import Contact from './routes/contact'
 
 const muiTheme = getMuiTheme({
   palette: {
-    primary1Color: '#eda821'
+    primary1Color: '#eda821',
+    textColor: '#333333'
   },
 });
 

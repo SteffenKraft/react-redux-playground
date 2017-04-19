@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 :global {
+  a {
+    color: #333;
+  }
   a.active {
-    color: red;
+    color: #eda821;
   }
 }
 
