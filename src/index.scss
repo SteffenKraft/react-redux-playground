@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+:global {
+  a.active {
+    color: red;
+  }
+}
+
 body {
   font-family: Roboto, Arial, Helvetica, sans-serif;
 }

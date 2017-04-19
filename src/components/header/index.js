@@ -6,7 +6,7 @@ import styles from './header.scss'
 
 const Header = () => (
     <div styleName="wrapper">
-        <NavLink exact to="/"   >Home</NavLink>
+        <NavLink exact to="/">Home</NavLink>
         <NavLink to="/about">About</NavLink>
         <NavLink to="/contact">Contact</NavLink>
     </div>
