@@ -45,7 +45,8 @@ class Contact extends React.Component {
                         hintText="Please enter your Firstname"
                         floatingLabelText="Firstname"
                         fullWidth={true}
-                        underlineFocusStyle={{ border: 'none' }}
+                        underlineFocusStyle={{ transition: '0ms' }}
+                        hintStyle={{ bottom: '9px' }}
                         name="firstname"
                     />
                     <TextField
@@ -53,7 +54,8 @@ class Contact extends React.Component {
                         hintText="Please enter your Name"
                         floatingLabelText="Name"
                         fullWidth={true}
-                        underlineFocusStyle={{ border: 'none' }}
+                        hintStyle={{ bottom: '10px' }}
+                        underlineFocusStyle={{ transition: '0ms' }}
                         name="name"
                         // errorText="Please put in your Name"
                     />
@@ -62,7 +64,8 @@ class Contact extends React.Component {
                         hintText="Please enter your Street"
                         floatingLabelText="Street"
                         fullWidth={true}
-                        underlineFocusStyle={{ border: 'none' }}
+                        hintStyle={{ bottom: '10px' }}
+                        underlineFocusStyle={{ transition: '0ms' }}
                         name="street"
                     />
                     <TextField
@@ -70,14 +73,15 @@ class Contact extends React.Component {
                         hintText="Please enter your Email"
                         floatingLabelText="Email"
                         fullWidth={true}
-                        underlineFocusStyle={{ border: 'none' }}
+                        hintStyle={{ bottom: '10px' }}
+                        underlineFocusStyle={{ transition: '0ms' }}
                         name="email"
                     />
                     <Checkbox
                         onCheck={this.handleInputChange}
                         label="Newsletter"
                         name="newsletter"
-                        style={{ marginTop: '10px' }}
+                        style={{ marginTop: '9px' }}
                         iconStyle={{ marginRight: '10px' }}
                     />
                     <Toggle
@@ -85,7 +89,7 @@ class Contact extends React.Component {
                         label="different address"
                         name="billing"
                         labelStyle={{textAlign: 'right'}}
-                        style={{ marginTop: '10px' }}
+                        style={{ marginTop: '9px' }}
                     />
                     <RaisedButton
                         label="Primary"
