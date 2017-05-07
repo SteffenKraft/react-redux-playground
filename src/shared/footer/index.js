@@ -6,9 +6,7 @@ import styles from './index.scss'
 
 const Footer = () => (
     <div styleName="wrapper">
-        <Link styleName="link" to="/">Home</Link> |
-        <Link styleName="link" to="/about">About</Link> |
-        <Link styleName="link" to="/contact">Contact</Link>
+        <Link styleName="link" to="/">Home</Link>
     </div>
 )
 

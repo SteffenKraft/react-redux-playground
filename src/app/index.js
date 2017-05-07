@@ -6,10 +6,8 @@ import {
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import getMuiTheme from 'material-ui/styles/getMuiTheme'
 
-import Layout from './layout'
-import About from './routes/about'
-import Home from './routes/home'
-import Contact from './routes/contact'
+import Layout from '../shared/layout'
+import gallery from '../routes/gallery/gallery'
 
 const muiTheme = getMuiTheme({
   palette: {
@@ -25,9 +23,7 @@ class App extends Component {
       <MuiThemeProvider muiTheme={muiTheme}>
         <Router>
           <Layout>
-            <Route exact path="/" component={Home} />
-            <Route path="/about" component={About} />
-            <Route path="/contact" component={Contact} />
+            <Route exact path="/" component={gallery} />
           </Layout>
         </Router>
       </MuiThemeProvider>
