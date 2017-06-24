@@ -7,7 +7,8 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import getMuiTheme from 'material-ui/styles/getMuiTheme'
 
 import Layout from '../shared/layout'
-import gallery from '../routes/gallery/gallery'
+import Gallery from '../routes/gallery/Gallery'
+import Single from '../routes/single/Single'
 
 const muiTheme = getMuiTheme({
   palette: {
@@ -23,7 +24,8 @@ class App extends Component {
       <MuiThemeProvider muiTheme={muiTheme}>
         <Router>
           <Layout>
-            <Route exact path="/" component={gallery} />
+            <Route exact path="/" component={Gallery} />
+            <Route exact path="/single/:id" component={Single} />
           </Layout>
         </Router>
       </MuiThemeProvider>

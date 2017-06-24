@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import { Helmet } from 'react-helmet'
 import { connect } from 'react-redux'
 
+import Photo from './Photo'
+
 function mapStateToProps(state) {
     return {
         posts: state.posts
@@ -13,7 +15,7 @@ function mapDispachToProps(dispatch) {
     return {}
 }
 
-class gallery extends Component {
+class Gallery extends Component {
     
     static propTypes = {
         posts: PropTypes.array,
@@ -29,7 +31,7 @@ class gallery extends Component {
                 <h2>gallery</h2>
                 {this.props.posts.map((post, index) => {
                     return (
-                        <span key={index}>{post.caption}</span>
+                        <Photo key={index} post={post} />
                     )
                 })}
             </div>
@@ -37,4 +39,4 @@ class gallery extends Component {
     }
 }
 
-export default connect(mapStateToProps, mapDispachToProps)(gallery)
+export default connect(mapStateToProps, mapDispachToProps)(Gallery)
